@@ -1,18 +1,36 @@
 module mainf
-
-include("text_util.jl")
-include("token.jl")
+    include("../errs/errors.jl")
+    include("start_modules.jl")
 
     function main()
-        r_file = open("code.txt", "r") # Read the code.txt file
-        code = readlines(r_file) # Save his lines (list of String)
+        stop_append = false
+        code_file = ""
 
-        for x in token.go(code)
-            for x2 in x[1 : length(x)-1] # We remove the last token that were added (.)
-                println("[", x2.value, " / ", x2.vtype, "]")
+        for (index, x) in enumerate(ARGS)
+            if startswith(x, "-")
+                stop_append = true
             end
-            println("----------")
+            if !(stop_append)
+                code_file = string(code_file, x)
+                if index < length(ARGS)
+                    code_file = string(code_file, " ")
+                end
+            end
         end
+
+        if strip(string(code_file)) == ""
+            errors.pup_err(errors.get_err("0002"))
+        end
+
+        read_file = []
+        try
+            o_file = open(code_file, "r")
+            read_file = readlines(o_file)
+        catch
+            errors.pup_err(errors.get_err("0001", [code_file]))
+        end
+
+        start_modules.go(read_file)
     end
 
 
