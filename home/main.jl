@@ -1,6 +1,11 @@
 module mainf
     include("../errs/errors.jl")
     include("start_modules.jl")
+    include("../text_util.jl")
+
+    function notice()
+
+    end
 
     function main()
         stop_append = false
