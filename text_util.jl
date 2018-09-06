@@ -114,17 +114,17 @@ module text_util
     function erase_btwn_parn(input, ret_lst = false) # This function
                                     # will erase the text between every parenthesis, including the parenthesis themselves.
                                     #'input' can be of  types String or List.
-        res, opnd_parn = [], false
+        res, opnd_parn_amount = [], 0
 
         for x in input
             if string(x) == "("
-                opnd_parn = true
+                opnd_parn_amount += 1
             elseif string(x) == ")"
-                opnd_parn = false
+                opnd_parn_amount -= 1
                 push!(res, " ")
                 continue
             end
-            if !(opnd_parn)
+            if opnd_parn_amount <= 0
                 push!(res, x)
             else
                 push!(res, " ")
@@ -192,7 +192,7 @@ module text_util
 
         for i in 1:beg_sp_amount
             if string(strip(erase_btwn_parn(input))) == ""
-                input = get_slice_safe(input, 2, length(input)-1)
+                input = get_slice_safe(input, 2, length(input)-1, ret_lst)
             else
                 break
             end
@@ -216,16 +216,21 @@ module text_util
     function check_if_type(input, _type = "str_lit")
         input = string(input)
 
-        if _type == "str_lit" && startswith(input, "\"") && endswith(input, "\""); return true
+        if _type == "str_lit" && startswith(input, "\"") && endswith(input, "\"")
+            return true
 
         elseif _type == "char_lit" && startswith(input, "\'") && endswith(input,
-            "\'") && length(input) >= 2 && length(input) <= 3; return true
+            "\'") && length(input) >= 2 && length(input) <= 3
+            return true
 
-        elseif _type == "numeric" && occursin(r"^(0|[1-9][0-9]*)$", input); return true
+        elseif _type == "numeric" && occursin(r"^(0|[1-9][0-9]*)$", input)
+            return true
 
-        elseif _type == "identifier" && occursin(r"^(?![0-9])[a-zA-Z_0-9]*$", input); return true
+        elseif _type == "identifier" && occursin(r"^(?![0-9])[a-zA-Z_0-9]*$", input)
+            return true
 
-        elseif _type == "operator" && lst_contains(info.op_lst, input); return true
+        elseif _type == "operator" && lst_contains(info.op_lst, input)
+            return true
 
         end
 
