@@ -10,8 +10,7 @@ include("../errs/errors.jl")
                       # The 'code' parameter should be a list of string representing the lines of a
                       # Lazen code.
 
-        fn_res = []
-        fn_res_raw = []
+        fn_res, fn_res_raw, fnres_preproc = [], [], []
 
         for x in code
             ln_res, ln_res_raw, idx_save, opnd_chr, opnd_str, build_str, x = [], [], 1, false, false, "", string(x, ".")
@@ -75,9 +74,10 @@ include("../errs/errors.jl")
 
             push!(fn_res_raw, text_util.get_slice_safe(ln_res_raw, 1, length(ln_res_raw)-1, true))
             push!(fn_res, ln_res)
+            push!(fnres_preproc, tok_preprocess.go(ln_res))
         end
 
-        return [fn_res, fn_res_raw]
+        return [fn_res, fn_res_raw, fnres_preproc]
     end
 
 end
