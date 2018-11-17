@@ -1,25 +1,25 @@
 enum ShitSize  = ALMOST_INVISIBLE, SMALL, MEDIUM, BIG
 enum ShitColor = LIGHT_BROWN, BROWN, GREEN, BLACK
 
-module Shit
+struct Shit
 	size  -> ShitSize
 	color -> ShitColor	 
 end
 
 impl Shit
-	func flush(self)
+	func flush(self as Shit)
 		self.size  = ALMOST_INVISIBLE
 		self.color = LIGHT_BROWN  
 	end
 end
 
-func main() -> int
+func main() -> Int
 	var newShit as Shit = new Shit(SMALL, GREEN)
 	newShit.flush()	
 	
 	println(
-		"Size : "    & newShit.size &
-		"\nColor : " & newShit.color
+		"Size : "    + newShit.size +
+		"\nColor : " + newShit.color
 	       )
 
 	return 0
