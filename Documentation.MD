@@ -23,7 +23,8 @@ Example
     # results a String, because one of the operand's value's type is String or Char
   
   5 + 5
-    # results an Integer, because the PLUS operator is placed between two expressions of type Integer or Double
+    # results an Integer, because the PLUS operator is placed between two expressions of
+      type Integer or Double
 ```
 <br>
 
