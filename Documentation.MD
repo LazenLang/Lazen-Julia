@@ -23,7 +23,7 @@ Example
 <br>
 
 <h3>Ternary Operator</h3>
-Imagine being able to use conditions in expressions. A ternary operator is a pair of two operators that takes three expressions as operands.
+A ternary operator is a pair of two operators that takes three expressions as operands.
 <br><br>
 Example
 
