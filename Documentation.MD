@@ -9,7 +9,25 @@ The language's compiler is not implemented yet.<br>
 
 <h2>Features</h2>
 <h3>Concatenation</h3>
-Concatenation is done by using the PLUS (+) operator and always returns a String if one of the operand is<br>
-(a name or a value) of type String or Char.
+Concatenation is done by using the PLUS (+) operator and always results a String if one of the operand's type is<br>
+String or Char.
 
-<h3>Conditions
+Example
+
+```
+  "a" + 5 + 'c'
+    # results a String, because one of the operand's value's type is String or Char
+```
+
+<h3>Ternary Operator</h3>
+Imagine being able to use conditions in expressions. A ternary operator is a group of two operators that takes three expressions as operands.
+
+Example
+
+```
+  2 > 1 ? "that's okay !" : "that's okay too !"
+```
+In this example, the first operand is a boolean expression (an expression which when evaluated, gives True or False).
+The second and the third operands are expressions.
+
+If 2 is greater than 1, then the expression should be "that's okay !", otherwise, it should be "that's okay too !".
