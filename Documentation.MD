@@ -32,7 +32,7 @@ Example
 ```
 <br>
 
-In this example, the first operand is a boolean expression (an expression which when evaluated, gives True or False).
-The second and the third operands are expressions.
+In this example, the first operand is a boolean expression (an expression which when evaluated, gives True or False).<br>
+The second and the third operands are expressions too, but not necessarily boolean.
 
 If 2 is greater than 1, then the expression should be "that's okay !", otherwise, it should be "that's okay too !".
