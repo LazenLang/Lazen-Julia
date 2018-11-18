@@ -9,5 +9,7 @@ The language's compiler is not implemented yet.<br>
 
 <h2>Features</h2>
 <h3>Concatenation</h3>
-Concatenation is done by using the PLUS (+) operator.<br>
-Concatenation always returns a String if one of the operand is (a name or a value) of type String or Char.
+Concatenation is done by using the PLUS (+) operator and always returns a String if one of the operand is<br>
+(a name or a value) of type String or Char.
+
+<h3>Conditions
