@@ -37,7 +37,7 @@ Example
 <br>
 
 <h3>Ternary Operator</h3>
-A ternary operator is a pair of two operators that takes three expressions as operands.
+A ternary operator is a pair of symbols that takes three expressions as operands.
 <br><br>
 Example
 
