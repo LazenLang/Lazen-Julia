@@ -12,7 +12,7 @@ The language's compiler is not implemented yet.<br>
 Concatenation is done by using the PLUS (+) operator and always results a String if one of the operand's type is<br>String or Char.<br><br>
 If not, the PLUS operator, if placed between two expressions of type Integer or Double, is the logical binary PLUS operator.<br><br>
 However, if placed before an expression of type Integer or Double and after no expression, the PLUS operator is the logical unary PLUS operator. Note that the unary PLUS operator is unnecessary.
-<br>
+<br><br>
 
 Example
 
@@ -24,7 +24,7 @@ Example
 
 <h3>Ternary Operator</h3>
 Imagine being able to use conditions in expressions. A ternary operator is a group of two operators that takes three expressions as operands.
-<br>
+<br><br>
 Example
 
 ```
