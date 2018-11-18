@@ -2,7 +2,7 @@
 
 <h2>Why ?</h2>
 Lazen is designed to be simple, safe and elegant.<br>
-It aims to re-introduce clever computer programming concepts/features in a "better" or "simpler" way.
+It aims to re-introduce clever computer programming concepts/features in a "better" or "simpler" way.<br>
 At the moment, this language has no real reason for you to give of your time for it. Documentation is still interesting.
 <br><br>
 The language's compiler is not implemented yet.<br>
