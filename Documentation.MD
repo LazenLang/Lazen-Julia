@@ -49,4 +49,8 @@ Example
 In this example, the first operand is a boolean expression (an expression which when evaluated, gives True or False).<br>
 The second and the third operands are expressions too, but not necessarily boolean.
 
-If 2 is greater than 1, then the expression should be "that's okay !", otherwise, it should be "that's okay too !".
+If 2 is greater than 1, then the expression should be "that's okay !", otherwise, it should be "that's okay too !".<br><br>
+The second and the third operands should have the same type ("that's okay !" and "that's okay too !" have the same<br>
+type here, so that's correct).
+
+<h3></h3>
