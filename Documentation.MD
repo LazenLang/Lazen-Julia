@@ -10,7 +10,9 @@ The language's compiler is not implemented yet.<br>
 <h2>Features</h2>
 <h3>Concatenation/PLUS operator</h3>
 Concatenation is done by using the PLUS (+) operator and always results a String if one of the operand's type is<br>String or Char.<br><br>
-If not, the PLUS operator, if placed between two expressions of type Integer or Double, is the logical binary PLUS operator.<br><br>
+
+If not, the PLUS operator, if placed between two expressions of type Integer or Double, is the logical binary PLUS operator It results an Integer if all of his operands are Integers, but Double if one of his operands is a Double.<br><br>
+
 However, if placed before an expression of type Integer or Double and after no expression, the PLUS operator is the logical unary PLUS operator. Note that the unary PLUS operator is unnecessary.
 <br><br>
 
@@ -19,6 +21,9 @@ Example
 ```
   "a" + 5 + 'c'
     # results a String, because one of the operand's value's type is String or Char
+  
+  5 + 5
+    # results an Integer, because the PLUS operator is placed between two expressions of type Integer or Double
 ```
 <br>
 
