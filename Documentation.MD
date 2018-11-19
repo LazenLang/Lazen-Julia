@@ -12,7 +12,7 @@ The language's compiler is not implemented yet.<br>
 <h3>(Concatenation/PLUS operator) and MINUS operator</h3>
 Concatenation is done by using the PLUS (+) operator and always results a String if one of the operand's type is<br>String or Char.<br><br>
 
-If not, the PLUS, even like the MINUS operator, if placed between two expressions of type Integer or Double, is a logical binary operator and results an Integer if both of his operands are Integers, Double if one of his operands is a Double.<br>
+If not, the PLUS, even like the MINUS operator, if placed between two expressions of type Integer or Double, is a logical binary operator and results Double if one of his operands is a Double.<br>
 
 However, if placed before an expression of type Integer or Double and after no expression, PLUS or MINUS operators are the logical unary POSITIVE and NEGATIVE operators. Note that the unary PLUS operator is unnecessary.
 <br><br>
@@ -37,9 +37,14 @@ Example
 ```
 <br>
 
-<h3>Multiplication/Division Operators</h1>
-Both multiplication and division operators should be placed between two expressions of Integer or Double type.
-They result an Integer if all of the operands are Integers Double if one of the operand is a Double.
+<h3>Multiplication, Division, Modulo, and Exponential Operators</h1>
+Multiplication operator : *
+Division operator       : /
+Modulo operator         : %
+Exponential operator    : ^
+
+Multiplication, division and modulo operators should be placed between two expressions of Integer or Double type.
+Like the other basic arithmetic operators, they result Double if one of the operand is a Double.
 
 <h3>Ternary Operator</h3>
 A ternary operator is a pair of symbols that takes three expressions as operands.
@@ -57,5 +62,3 @@ The second and the third operands are expressions too, but not necessarily boole
 If 2 is greater than 1, then the expression should be "that's okay !", otherwise, it should be "that's okay too !".<br><br>
 The second and the third operands should have the same type ("that's okay !" and "that's okay too !" have the same<br>
 type here, so that's correct).
-
-<h3>Multipli</h3>
