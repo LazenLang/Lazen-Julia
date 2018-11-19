@@ -20,8 +20,9 @@ However, if placed before an expression of type Integer or Double and after no e
 Example
 
 ```
-  "a" + 5 - 'c'
-    # results a String : "a5c", because one of the operand's value's type is String or Char
+  "a" + 5 + 'c'
+    /* results a String : "a5c", because one of the operand's value's type is String or Char and
+      the operator is the PLUS operator */
   
   5 + 5
     /* results an Integer, because all of the operator's operands are Integer expressions.*/
