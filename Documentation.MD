@@ -10,7 +10,7 @@ The language's compiler is not implemented yet.<br>
 <h1>Features</h1>
 <h2>Operators</h2>
 <h3>(Concatenation/PLUS operator) and MINUS operator</h3>
-Concatenation is done by using the PLUS (+) operator and always results a String if all of the operand's are<br>expressions of type String or Char.<br><br>
+Concatenation is done by using the PLUS (+) operator and always results a String if all of the operands are<br>expressions of type String or Char.<br><br>
 
 If not, the PLUS, even like the MINUS operator, if placed between two expressions of type Integer or Double, is a logical binary operator and results Double if one of his operands is a Double.<br>
 
