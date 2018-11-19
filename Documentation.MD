@@ -24,12 +24,10 @@ Example
     # results a String : "a5c", because one of the operand's value's type is String or Char
   
   5 + 5
-    /* results an Integer, because the PLUS operator is placed between two expressions of
-       type Integer only */
+    /* results an Integer, because all of the operator's operands are Integer expressions.*/
        
   5 - 2.3
-    /* results a Double, because the operator is placed between two expressions of type
-       Integer OR Double and one of his operands is a Double */
+    /* results a Double, because one of the operator's operands is a Double expression. */
        
   +(5)
     /* results an Integer or a Double, because the operator is placed before an expression
