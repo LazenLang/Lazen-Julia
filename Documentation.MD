@@ -38,12 +38,12 @@ Example
 <br>
 
 <h3>Multiplication, Division, Modulo, and Exponential Operators</h1>
-Multiplication operator : *
-Division operator       : /
-Modulo operator         : %
-Exponential operator    : ^
+Multiplication operator : *<br>
+Division operator       : /<br>
+Modulo operator         : %<br>
+Exponential operator    : ^<br>
 
-Multiplication, division and modulo operators should be placed between two expressions of Integer or Double type.
+Multiplication, division and modulo operators should be placed between two expressions of Integer or Double type.<br>
 Like the other basic arithmetic operators, they result Double if one of the operand is a Double.
 
 <h3>Ternary Operator</h3>
