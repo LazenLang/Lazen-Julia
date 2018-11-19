@@ -41,7 +41,7 @@ Example
 Multiplication operator : *<br>
 Division operator       : /<br>
 Modulo operator         : %<br>
-Exponential operator    : ^<br>
+Exponential operator    : ^<br><br>
 
 Multiplication, division and modulo operators should be placed between two expressions of Integer or Double type.<br>
 Like the other basic arithmetic operators, they result Double if one of the operand is a Double.
